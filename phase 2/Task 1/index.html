@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;1,100&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    body {
+        font-family: 'Fira Sans', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background:url('pic.jpg');
+
+
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        left: 34px;
+        top: 20px;
+        /* border: 2px solid rgb(200, 185, 185); */
+        
+
+    }
+
+    .left img {
+        width: 50px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 20px auto ;
+
+        /* border: 2px solid rgb(9, 186, 24); */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid rgb(242, 219, 16); */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+
+
+    }
+
+    .navbar li a {
+        color:white;
+         text-decoration: none;
+        padding:34px 23px;
+        
+    }
+
+    .navbar li a:hover, 
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Fira Sans', sans-serif;
+        margin: 0px 9px;
+        color:rgb(107, 100, 100);
+        background-color:rgb(149, 168, 210);
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(76, 63, 88);
+
+    }
+    .container{
+border: 2px solid white;
+margin: 106px 80px;
+padding:75px;
+width: 33%;
+border-radius: 28px;
+color: rgb(20, 20, 20);
+    }
+    .form-group input{
+        font-family: 'Fira Sans', sans-serif;
+text-align: center;
+display: block;
+width: 500px;
+padding: 1px;
+border: 2px solid black;
+margin: 11px auto;
+font-size: 25px;
+border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 745;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://t4.ftcdn.net/jpg/01/94/15/39/360_F_194153984_2OlRQYPKUyGQCWiJpPElk7zzF08QY6aR.jpg" alt="">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">EMail Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Visit the everyday fashion now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your brand">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your items">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
